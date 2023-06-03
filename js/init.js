@@ -6,7 +6,6 @@ $(function () {
 	loadScript("js/products.js", productsSetup);
 	loadScript("js/user.js", userInfo);
 	loadScript("js/cart.js", cartInfo);
-	//loadScript("js/ecommerce.js", cartSetup);
 });
 
 $.get("/templates/navigation.html", function (data) {
