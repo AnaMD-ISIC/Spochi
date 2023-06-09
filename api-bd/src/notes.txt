@@ -1,0 +1,13 @@
+//Body input for insert
+    {
+        "name": "Smartphone Xiaomi Redmi 9C",
+        "category": "Electrónica",
+        "price": "$399.99"
+    }
+
+//Body input for update
+    {
+        "name": "Nintendo Switch Lite Pink",
+        "category": "Electrónica",
+        "price": "$899.99"
+    }

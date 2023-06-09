@@ -91,7 +91,7 @@ function urlParam(name) {
 	}
 }
 // Consultar los productos
-fetch('/api/products')
+fetch('http://127.0.0.1:3000/api/products')
 .then(response => response.json())
 .then(data => {
   const productsContainer = document.querySelector('.row.products.new');
@@ -104,7 +104,7 @@ fetch('/api/products')
 });
 
 // Consultar los productos añadidos al carrito
-fetch('/api/cart')
+fetch('http://127.0.0.1:3000/api/cart')
 .then(response => response.json())
 .then(data => {
   const cartCountElement = document.querySelector('.cartCount');
@@ -112,7 +112,7 @@ fetch('/api/cart')
 });
 
 // Consultar una categoría y sus productos
-fetch('/api/categories/{category-id}')
+fetch('http://127.0.0.1:3000/api/categories/{category-id}')
 .then(response => response.json())
 .then(data => {
   const categoryTitleElement = document.querySelector('.category-name');
@@ -128,7 +128,7 @@ fetch('/api/categories/{category-id}')
 });
 
 // Consultar los datos de un producto seleccionado
-fetch('/api/products/{product-id}')
+fetch('http://127.0.0.1:3000/api/products/{product-id}')
 .then(response => response.json())
 .then(data => {
   const productTitleElement = document.querySelector('.product_title');
